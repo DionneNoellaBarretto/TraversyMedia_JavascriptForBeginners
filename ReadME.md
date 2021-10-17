@@ -84,3 +84,54 @@ console.log(fruits.indexOf('oranges')); returns 1 if const fruits = ['apples', '
 console.log(var name.split(''));
 <!-- comma separated words -->
 console.log(var name.split(', '));
+
+## Object Literals
+
+Key value pairs!
+
+```
+const person = {
+    firstName: 'Dee',
+    lastName: 'Bee',
+    movies: ['titanic','zorro','rocky'],
+    address: {
+        street: '400 Brushy',
+        city: 'cary',
+        state: 'NC'
+    }
+}
+
+<!-- retrieving person specifics entirely -->
+console.log(person);
+console.log(person.firstName, person.lastName);
+console.log(person.movies[2]);
+console.log(person.address.city);
+
+<!-- destructuring is a fairly new concept! ES6 concept -->
+```
+
+## [JSON Formatter](https://jsonformatter.curiousconcept.com/) 
+Send data to the server in json format!
+
+```
+
+const todos = [
+    {
+        id:1,
+        text: 'Trash',
+        isCompleted: true
+    },
+    {
+        id:2,
+        text: 'Meeting',
+        isCompleted: true
+    },
+    {
+        id:1,
+        text: 'Lunch',
+        isCompleted: false
+    },
+];
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+```
